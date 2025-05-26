@@ -1,30 +1,45 @@
-# Файлы ОС
+# Файлы и директории, которые нужно игнорировать
 .DS_Store
+*.swp
+*.swo
 Thumbs.db
+._*
 
-# Flutter/Dart
-**/doc/api/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
+# Игнорируем папки сборки и кэша
 /build/
-
-# Android/iOS
-/android/app/debug/
-/android/app/profile/
-/android/app/release/
+/android/
 /ios/
+/.dart_tool/
+/.idea/
+/.vscode/
+/.gradle/
+/.pub-cache/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.packages
+.pubspec.lock
 
-# IDE
-.idea/
-.vscode/
-*.iml
+# Игнорируем логи и временные файлы
+*.log
+*.tmp
+*.bak
 
-# Оставляем нужное
-!lib/
-!test/
-!assets/
-!android/
-!pubspec.yaml
+# Игнорируем пользовательские настройки IDE
+**/.idea/workspace.xml
+**/.idea/modules.xml
+**/.idea/tasks.xml
+**/.idea/libraries/
+
+# Игнорируем файлы конфигурации (кроме android/)
+**/local.properties
+**/gradle.properties
+**/gradlew
+**/gradlew.bat
+**/settings.gradle
+
+# Но НЕ игнорируем важные папки и файлы:
+!/lib/
+!/assets/
+!/test/
+!/android/
+!/pubspec.yaml
