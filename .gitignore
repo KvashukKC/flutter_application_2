@@ -1,30 +1,33 @@
-# Файлы ОС
+# Игнорировать все файлы и папки по умолчанию
+*
+
+# Но исключить (не игнорировать) следующие важные папки и файлы:
+!/assets/
+!/lib/
+!/test/
+!/android/
+!/pubspec.yaml
+!/README.md
+
+# Специфичные исключения для Flutter и Dart
+!.metadata
+!.packages
+!.flutter-plugins
+!.flutter-plugins-dependencies
+
+# Игнорировать конкретные ненужные файлы/папки:
+/.dart_tool/
+/.idea/
+/.vscode/
+/build/
+/ios/
+/android/app/src/main/java/io/flutter/plugins/
+/android/app/src/main/kotlin/io/flutter/plugins/
+*.iml
+*.swp
+*.swo
 .DS_Store
 Thumbs.db
-
-# Flutter/Dart
-**/doc/api/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-
-# Android/iOS
-/android/app/debug/
-/android/app/profile/
-/android/app/release/
-/ios/
-
-# IDE
-.idea/
-.vscode/
-*.iml
-
-# Оставляем нужное
-!lib/
-!test/
-!assets/
-!android/
-!pubspec.yaml
+*.log
+*.tmp
+*.bak
