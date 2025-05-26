@@ -1,0 +1,31 @@
+# Игнорировать системные файлы
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Игнорировать настройки IDE
+.idea/
+.vscode/
+*.iml
+
+# Игнорировать кэш и сборки Flutter
+.dart_tool/
+.pub/
+/build/
+/android/app/build/
+/ios/
+
+# Игнорировать служебные файлы Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+
+# НЕ игнорировать важные папки и файлы:
+!assets/
+!lib/
+!test/
+!android/
+!pubspec.yaml
+!README.md
