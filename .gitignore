@@ -1,9 +1,6 @@
-# Файлы ОС и редакторов
+# Файлы ОС
 .DS_Store
-*.swp
-*.swo
 Thumbs.db
-._*
 
 # Flutter/Dart
 **/doc/api/
@@ -13,30 +10,21 @@ Thumbs.db
 .pub-cache/
 .pub/
 /build/
+
+# Android/iOS
 /android/app/debug/
 /android/app/profile/
 /android/app/release/
-
-# Android/iOS
 /ios/
-android/app/src/main/java/io/flutter/plugins/
-android/app/src/main/kotlin/io/flutter/plugins/
 
 # IDE
 .idea/
 .vscode/
 *.iml
-*.ipr
-*.iws
 
-# Логи и временные файлы
-*.log
-*.tmp
-*.bak
-
-# Но оставляем важное!
-!/lib/
-!/test/
-!/assets/
-!/android/
-!/pubspec.yaml
+# Оставляем нужное
+!lib/
+!test/
+!assets/
+!android/
+!pubspec.yaml
