@@ -1,0 +1,30 @@
+# Файлы ОС
+.DS_Store
+Thumbs.db
+
+# Flutter/Dart
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Android/iOS
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/ios/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Оставляем нужное
+!lib/
+!test/
+!assets/
+!android/
+!pubspec.yaml
